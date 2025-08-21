@@ -46,3 +46,41 @@ Infrastructure as a service (IaaS) is the most flexible category of cloud servic
 Platform as a service (PaaS) is a middle ground between renting space in a datacenter (infrastructure as a service) and paying for a complete and deployed solution (software as a service). In a PaaS environment, the cloud provider maintains the physical infrastructure, physical security, and connection to the internet. They also maintain the operating systems, middleware, development tools, and business intelligence services that make up a cloud solution. In a PaaS scenario, you don't have to worry about the licensing or patching for operating systems and databases.
 # Software as a Service(IaaS)
 Software as a service (SaaS) is the most complete cloud service model from a product perspective. With SaaS, you’re essentially renting or using a fully developed application
+
+# Azure physical infrastructure
+A region is a geographical area on the planet that contains at least one, but potentially multiple datacenters that are nearby and networked together with a low-latency network. like South Africa North region, Central US
+Availability zones are physically separate datacenters within an Azure region
+Azure regions are paired with another region within the same geography (such as US, Europe, or Asia) at least 300 miles away.
+
+# Azure management infrastructure
+A resource is the basic building block of Azure
+Resource groups are simply groupings of resources(no nested resource groups)Resource groups provide a convenient way to group resources together. When you apply an action to a resource group, if deleted all the resorcess in it are also deleted.
+subscriptions are a unit of management, billing, and scale. Similar to how resource groups are a way to logically organize resources, subscriptions allow you to logically organize your resource groups and facilitate billing
+The final piece is the management group. Resources are gathered into resource groups, and resource groups are gathered into subscriptions. If you’re just starting in Azure that might seem like enough hierarchy to keep things organized. But imagine if you’re dealing with multiple applications, multiple development teams, in multiple geographies.
+
+# Lab 1
+# Create an Azure reource group
+Steps
+- Signin to the Azure portal
+- Select create a resource > VM > Create 
+- In basics tabs select subscription type(free student)
+- Resource group(select the reource group created earlier)
+- Enter name
+- Authentication type :Password
+- Set Username
+- Set password
+- Leave other settings as defaults 
+# Create an Azure reource(Virtual machine)
+Steps
+- Signin to the Azure portal
+- Select create a resource > VM > Create 
+- In basics tabs select subscription type(free student)
+- Resource group(select the reource group created earlier)
+- Enter name
+- Authentication type :Password
+- Set Username
+- Set password
+- Leave other settings as defaults
+# Clean up
+
+It's a good idea at the end of a project to identify whether you still need the resources you created. Resources that you leave running can cost you money. You can delete resources individually or delete the resource group to delete the entire set of resources.
